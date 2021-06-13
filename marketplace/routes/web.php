@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Models\User;
 
 /*
 |--------------------------------------------------------------------------
@@ -25,12 +26,12 @@ Route::get('/model',function(){
  //  $user->password = bcrypt('12345678');
  //  return $user->save();
 
-    $user = \App\Models\User::create([
-        'name'=> 'Prebelli',
-        'email'=> 'clayton@prebelli.online',
+    User::create([
+        'name'=> 'Prebelli atualizado',
+        'email'=> 'clayton.preblli.pires@prebelli.online',
         'password'=> bcrypt('Mistic@1708')
     ]);
 
-    return \App\Models\User::all();
+    return User::all();
 
 });
