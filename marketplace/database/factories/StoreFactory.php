@@ -19,7 +19,7 @@ class StoreFactory extends Factory
      *
      * @return array
      */
-    protected $fillable = ['name','description','phone','mobile_phone','slug'];
+
 
       public function definition()
     {
