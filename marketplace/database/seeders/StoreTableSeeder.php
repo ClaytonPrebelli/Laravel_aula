@@ -11,6 +11,7 @@ class StoreTableSeeder extends Seeder
      *
      * @return void
      */
+    protected $fillable = ['name','description','phone','mobile_phone','slug'];
     public function run()
     {
         //

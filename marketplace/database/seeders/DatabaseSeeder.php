@@ -2,8 +2,10 @@
 
 namespace Database\Seeders;
 
-use App\Models\User;
+
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Seeder;
+
 
 class DatabaseSeeder extends Seeder
 {
@@ -12,8 +14,13 @@ class DatabaseSeeder extends Seeder
      *
      * @return void
      */
+    use hasFactory;
+
     public function run()
     {
-        \App\Models\User::factory(10)->create();
+        $this->call(UsersTableSeeder::class);
+        // \App\Models\User::factory()->create();
+
     }
+
 }
